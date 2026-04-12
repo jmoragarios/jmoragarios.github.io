@@ -4,64 +4,263 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jmoragarios - Portfolio</title>
-    <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="container">
-        <head>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href="#">jmoragarios</a>
-              
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                  <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Few projects</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Contact me</a>
-                    </li>
-                  </ul>
-                </div>
-            </nav>
-        </head>
-        <div class="row text-center mt-3">
-            <div class="col-lg-4 col">
-                <img class="img-thumbnail img-profile" src="./img/profile.JPG" alt="">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">jmoragarios</a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-title">Software Developer</h1>
+            <p class="hero-tagline">Building digital experiences with code</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
             </div>
-            <div class="col-lg-8 col mt-2 text-center">
-                <h5>Jose Mario Moraga Rios</h5>
-                <h6>Software developer</h6>
-                <div class="container text-center">
-                    <div class="row m-2">
-                      <div class="col-lg-3 col-12 mt-1"><a href="https://twitter.com/jm_moragarios" target="_blank"><i class="fab fa-twitter"></i> @jm_moragarios</a></div>
-                      <div class="col-lg-3 col-12 mt-1"><a href="https://github.com/jmoragarios" target="_blank"><i class="fab fa-github"></i> jmoragarios</a></div>
-                      <div class="col-lg-3 col-12 mt-1"><a href="https://api.whatsapp.com/send?phone=50686328401" target="_blank"><i class="fas fa-mobile-alt"></i> +506 8632 8401</a></div>
-                      <div class="col-lg-3 col-12 mt-1"><a href="#"><i class="fas fa-phone-volume"></i> +506 2677 8268</a></div>
+            <div class="hero-socials">
+                <a href="https://github.com/jmoragarios" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate software developer focused on creating clean, efficient, and user-friendly applications. I enjoy solving complex problems and turning ideas into reality through code.</p>
+                    <p>With experience across the full stack, I specialize in building modern web applications that deliver exceptional user experiences. I'm always eager to learn new technologies and improve my craft.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">9+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
                     </div>
-                    
                 </div>
-                
             </div>
         </div>
-        <hr class="bg-light">
-        <div class="text-center">
-            <i class="fa fa-hammer fa-9x"></i>
-            <h1 class="mt-5 text-center"> Coming Soon. Web site in progress...</h1>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-angular skill-icon"></i>
+                    <span class="skill-name">Angular</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-node skill-icon"></i>
+                    <span class="skill-name">NestJS</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-microsoft skill-icon"></i>
+                    <span class="skill-name">.NET Core</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-git-alt skill-icon"></i>
+                    <span class="skill-name">Git</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database skill-icon"></i>
+                    <span class="skill-name">PostgreSQL</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-server skill-icon"></i>
+                    <span class="skill-name">MySQL</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-leaf skill-icon"></i>
+                    <span class="skill-name">MongoDB</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-table skill-icon"></i>
+                    <span class="skill-name">MS SQL Server</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-wind skill-icon"></i>
+                    <span class="skill-name">Windsurf</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code skill-icon"></i>
+                    <span class="skill-name">VS Code</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-docker skill-icon"></i>
+                    <span class="skill-name">Docker & Podman</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cloud skill-icon"></i>
+                    <span class="skill-name">Cloud Services</span>
+                </div>
+            </div>
         </div>
-    </div>
-    
+    </section>
 
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-code project-placeholder"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">Full-stack e-commerce solution with payment integration, inventory management, and real-time analytics dashboard.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">.NET Core</span>
+                            <span class="tech-tag">MS SQL Server</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-mobile-alt project-placeholder"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">Collaborative task management application with real-time updates, team workspaces, and progress tracking.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">NestJS</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-chart-line project-placeholder"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Data Visualization Dashboard</h3>
+                        <p class="project-description">Interactive analytics dashboard for visualizing complex datasets with customizable charts and reports.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">NestJS</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">Have a project in mind? Let's talk about it.</p>
+            <div class="contact-content">
+                <form id="contactForm" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loader" style="display: none;"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+                    </button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@jmoragarios.dev</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/jmoragarios" target="_blank">github.com/jmoragarios</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Available Worldwide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 jmoragarios. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/jmoragarios" target="_blank" class="footer-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
