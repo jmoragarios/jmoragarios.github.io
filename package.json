@@ -1,0 +1,20 @@
+{
+  "name": "jmoragarios-portfolio",
+  "version": "2.0.0",
+  "description": "Modern portfolio website with contact form",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "dark-theme"
+  ],
+  "author": "jmoragarios",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
